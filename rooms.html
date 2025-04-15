@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Rooms | Couples Resort</title>
+  <link rel="stylesheet" href="css/grid.css" type="text/css">
+  <link rel="stylesheet" href="css/main.css" type="text/css">
+</head>
+<body class="rooms-page">
+
+    <header class="grid-con" id="main-header">
+        <nav id="main-nav" class="col-span-full">
+            <h2 class="hidden">Main Navigation</h2>
+
+            <input type="checkbox" id="hamburger" hidden>
+            <label for="hamburger">
+            <img src="images/burger.svg" alt="hamburger menu icon">
+            </label>
+
+            <div id="burger-con">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="rooms.html">Rooms</a></li>
+                    <li><a href="packages.html">Packages</a></li>
+                    <li><a class = "selected" href="dining.html">Dining</a></li>
+                    <li><a href="SpaActivities.html">Spa Activites</a></li>
+                    <li><a href="#">Reservations</a></li>
+                </ul>
+            </div>
+          </nav>
+          <div id="logo" class="col-span-full">
+              <img src="images/couples_resort_logo.svg" alt="Couples Resort Logo">
+          </div>
+          </header>
+
+          <section id="hero" class="grid-con">
+            <h2 hidden>Hero Section</h2>
+            <div id="book-now-hero" class="book-now col-start-3 col-span-2">
+              <p>Book Now</p>
+            </div>
+          
+            <section id="hero-heading-box" class="col-span-full">
+              <h2 class="hero-img-h2">
+                <span>Couples Resort</span><br> Rooms
+              </h2>
+            </section>
+          </section>
+
+  <!--Rooms Availability Button-->
+          <section id="booking-box" class="grid-con">
+            <div class="col-span-full booking-container">
+          
+              <h2 class="booking-title">Book Your Stay</h2>
+          
+              <label for="accomodation-type">
+                <i class="fas fa-chevron-down"></i> Accommodation Type
+              </label>
+        
+              <select id="accomodation-type" name="accomodation-type">
+                <option value="accomodation-type">Accomodation Type</option>
+                <option value="Chateau">Chateau</option>
+                <option value="Villas">Villas</option>
+                <option value="Masters-Suite">Masters Suite</option>
+                <option value="Exotics">Exotics</option>
+                <option value="Chalets">Chalets</option>
+                <option value="Junior-Suite">Junior Suite</option>
+              </select>
+          
+              <div class="date-row">
+                <div class="half">
+                  <label for="checkin">Check-in</label>
+                  <input type="date" id="checkin">
+                </div>
+              
+                <div class="half">
+                  <label for="checkout">Check-out</label>
+                  <input type="date" id="checkout">
+                </div>
+              </div>
+          
+              <label for="nights">Number of Romantic Evenings</label>
+              <input type="number" id="nights" placeholder="e.g. 2">
+          
+              <div class="center-btn">
+                <button class="submit-btn">Check Availability</button>
+              </div>
+            </div>
+          </section>
+        
+          
+        <!-- Rooms -->
+        <section class="room-accordion grid-con">
+
+          
+          <!-- Chateau -->
+          <details class="col-span-full room-accordion-box">
+            <summary>
+              <span class="arrow"></span> Chateau
+            </summary>
+          
+            <img src="images/rooms/ChateauHero.jpg" alt="Chateau Room">
+          
+            <div class="slideshow-nav">
+              <span>1</span>
+              <span>2</span>
+              <span>3</span>
+              <span>4</span>
+              <span>5</span>
+            </div>
+          
+            <div class="room-mini-info-box">
+              <div class="room-left">
+                <h3>Chateaus</h3>
+                <p>1400 sq. ft.</p>
+              </div>
+          
+              <div class="room-right">
+                <div class="learn-more-wrapper">
+                  <button class="learn-more-btn">Learn More</button>
+                  <div class="room-details-hover">
+                    <p><strong>Exclusive Amenities:</strong></p>
+                    <ul>
+                      <li>Private outdoor hot tub</li>
+                      <li>Wood-burning fireplace</li>
+                      <li>King-size bed</li>
+                      <li>Walkout balcony or deck with lake views</li>
+                      <li>European shower with multiple heads</li>
+                      <li>50-inch television</li>
+                      <li>Free Wi-Fi and Netflix</li>
+                      <li>Keurig coffee maker with K-caps</li>
+                      <li>Bar fridge</li>
+                      <li>Two bathrooms</li>
+                      <li>Hair dryer and cosmetic mirror</li>
+                      <li>Iron and ironing board</li>
+                      <li>Free long-distance phone calls</li>
+                      <li>Two chaise lounge chairs (seasonal)</li>
+                    </ul>
+                  </div>
+                </div>
+          
+                <button class="room-availability-btn">Check Availability</button>
+              </div>
+            </div>
+          </details>
+          
+            <!-- Villas -->
+            <details class="col-span-full room-accordion-box">
+              <summary>
+                <span class="arrow"></span> Villas
+              </summary>
+          
+                <img src="images/Rooms/Villas.jpg" alt="Villas">
+          
+                <div class="slideshow-nav">
+                  <span>1</span>
+                  <span>2</span>
+                  <span>3</span>
+                  <span>4</span>
+                  <span>5</span>
+                </div>
+
+                <div class="room-mini-info-box">
+                  <div class="room-left">
+                    <h3>Villa</h3>
+                    <p>Size: 1,000 sq. ft.</p>
+                  </div>
+          
+                  <div class="room-right">
+                    <div class="learn-more-wrapper">
+                      <button class="learn-more-btn">Learn More</button>
+                      <div class="room-details-hover">
+                        <p><strong>Exclusive Amenities:</strong></p>
+                        <ul>
+                          <li>Private outdoor hot tub</li>
+                          <li>Wood-burning fireplace</li>
+                          <li>King-size bed</li>
+                          <li>Walkout balcony or deck with lake views</li>
+                          <li>European shower with multiple heads</li>
+                          <li>50-inch television</li>
+                          <li>Free Wi-Fi and Netflix</li>
+                          <li>Keurig coffee maker with K-caps</li>
+                          <li>Bar fridge</li>
+                          <li>Two bathrooms</li>
+                          <li>Hair dryer and cosmetic mirror</li>
+                          <li>Iron and ironing board</li>
+                          <li>Free long-distance phone calls</li>
+                          <li>Two chaise lounge chairs (seasonal)</li>
+                        </ul>
+                      </div>
+                    </div>
+          
+                    <button class="room-availability-btn">Check Availability</button>
+                  </div>
+                  </div>
+              </details>
+
+            <!-- Master Suite -->
+            <details class="col-span-full room-accordion-box">
+              <summary>
+                <span class="arrow"></span> Master Suite
+              </summary>
+          
+                <img src="images/Rooms/Masters.jpg" alt="Masters">
+          
+                <div class="slideshow-nav">
+                  <span>1</span>
+                  <span>2</span>
+                  <span>3</span>
+                  <span>4</span>
+                  <span>5</span>
+                </div>
+
+                <div class="room-mini-info-box">
+                  <div class="room-left">
+                    <h3>Masters Suite</h3>
+                    <p>Size: 1,000 sq. ft.</p>
+                  </div>
+          
+                  <div class="room-right">
+                    <div class="learn-more-wrapper">
+                      <button class="learn-more-btn">Learn More</button>
+                      <div class="room-details-hover">
+                        <p><strong>Exclusive Amenities:</strong></p>
+                        <ul>
+                          <li>Private outdoor hot tub</li>
+                          <li>Wood-burning fireplace</li>
+                          <li>King-size bed</li>
+                          <li>Walkout balcony or deck with lake views</li>
+                          <li>European shower with multiple heads</li>
+                          <li>50-inch television</li>
+                          <li>Free Wi-Fi and Netflix</li>
+                          <li>Keurig coffee maker with K-caps</li>
+                          <li>Bar fridge</li>
+                          <li>Two bathrooms</li>
+                          <li>Hair dryer and cosmetic mirror</li>
+                          <li>Iron and ironing board</li>
+                          <li>Free long-distance phone calls</li>
+                          <li>Two chaise lounge chairs (seasonal)</li>
+                        </ul>
+                      </div>
+                    </div>
+          
+                    <button class="room-availability-btn">Check Availability</button>
+                  </div>
+                  </div>
+              </details>
+
+            <!-- Exotic Suite -->
+            <details class="col-span-full room-accordion-box">
+              <summary>
+                <span class="arrow"></span> Exotic Suite
+              </summary>
+          
+                <img src="images/Rooms/Exotics.jpg" alt="Exotics Outdoor">
+          
+                <div class="slideshow-nav">
+                  <span>1</span>
+                  <span>2</span>
+                  <span>3</span>
+                  <span>4</span>
+                  <span>5</span>
+                </div>
+
+                <div class="room-mini-info-box">
+                  <div class="room-left">
+                    <h3>Exotic Suite</h3>
+                    <p>Size: 600-1,000 sq. ft.</p>
+                  </div>
+          
+                  <div class="room-right">
+                    <div class="learn-more-wrapper">
+                      <button class="learn-more-btn">Learn More</button>
+                      <div class="room-details-hover">
+                        <p><strong>Exclusive Amenities:</strong></p>
+                        <ul>
+                          <li>Private outdoor hot tub</li>
+                          <li>Wood-burning fireplace</li>
+                          <li>King-size bed</li>
+                          <li>Walkout balcony or deck with lake views</li>
+                          <li>European shower with multiple heads</li>
+                          <li>50-inch television</li>
+                          <li>Free Wi-Fi and Netflix</li>
+                          <li>Keurig coffee maker with K-caps</li>
+                          <li>Bar fridge</li>
+                          <li>Two bathrooms</li>
+                          <li>Hair dryer and cosmetic mirror</li>
+                          <li>Iron and ironing board</li>
+                          <li>Free long-distance phone calls</li>
+                          <li>Two chaise lounge chairs (seasonal)</li>
+                        </ul>
+                      </div>
+                    </div>
+          
+                    <button class="room-availability-btn">Check Availability</button>
+                  </div>
+                  </div>
+              </details>
+
+            <!-- Chalets -->
+            <details class="col-span-full room-accordion-box">
+              <summary>
+                <span class="arrow"></span> Chalets
+              </summary>
+          
+                <img src="images/Rooms/ChaletHero.jpg" alt="Chalet Outdoor">
+          
+                <div class="slideshow-nav">
+                  <span>1</span>
+                  <span>2</span>
+                  <span>3</span>
+                  <span>4</span>
+                  <span>5</span>
+                </div>
+
+                <div class="room-mini-info-box">
+                  <div class="room-left">
+                    <h3>Chalet</h3>
+                    <p>Size: 700 sq. ft.</p>
+                  </div>
+          
+                  <div class="room-right">
+                    <div class="learn-more-wrapper">
+                      <button class="learn-more-btn">Learn More</button>
+                      <div class="room-details-hover">
+                        <p><strong>Exclusive Amenities:</strong></p>
+                        <ul>
+                          <li>Private outdoor hot tub</li>
+                          <li>Wood-burning fireplace</li>
+                          <li>King-size bed</li>
+                          <li>Walkout balcony or deck with lake views</li>
+                          <li>European shower with multiple heads</li>
+                          <li>50-inch television</li>
+                          <li>Free Wi-Fi and Netflix</li>
+                          <li>Keurig coffee maker with K-caps</li>
+                          <li>Bar fridge</li>
+                          <li>Two bathrooms</li>
+                          <li>Hair dryer and cosmetic mirror</li>
+                          <li>Iron and ironing board</li>
+                          <li>Free long-distance phone calls</li>
+                          <li>Two chaise lounge chairs (seasonal)</li>
+                        </ul>
+                      </div>
+                    </div>
+          
+                    <button class="room-availability-btn">Check Availability</button>
+                  </div>
+                  </div>
+              </details>
+
+            <!-- Junior Suite -->
+            <details class="col-span-full room-accordion-box">
+              <summary>
+                <span class="arrow"></span> Junior Suite
+              </summary>
+          
+                <img src="images/Rooms/JuniorSuite.jpg" alt="Junior Suite Outdoor">
+          
+                <div class="slideshow-nav">
+                  <span>1</span>
+                  <span>2</span>
+                  <span>3</span>
+                  <span>4</span>
+                  <span>5</span>
+                </div>
+
+                <div class="room-mini-info-box">
+                  <div class="room-left">
+                    <h3>Junior Suite</h3>
+                    <p>Size: 600 sq. ft.</p>
+                  </div>
+          
+                  <div class="room-right">
+                    <div class="learn-more-wrapper">
+                      <button class="learn-more-btn">Learn More</button>
+                      <div class="room-details-hover">
+                        <p><strong>Exclusive Amenities:</strong></p>
+                        <ul>
+                          <li>Private outdoor hot tub</li>
+                          <li>Wood-burning fireplace</li>
+                          <li>King-size bed</li>
+                          <li>Walkout balcony or deck with lake views</li>
+                          <li>European shower with multiple heads</li>
+                          <li>50-inch television</li>
+                          <li>Free Wi-Fi and Netflix</li>
+                          <li>Keurig coffee maker with K-caps</li>
+                          <li>Bar fridge</li>
+                          <li>Two bathrooms</li>
+                          <li>Hair dryer and cosmetic mirror</li>
+                          <li>Iron and ironing board</li>
+                          <li>Free long-distance phone calls</li>
+                          <li>Two chaise lounge chairs (seasonal)</li>
+                        </ul>
+                      </div>
+                    </div>
+          
+                    <button class="room-availability-btn">Check Availability</button>
+                  </div>
+                  </div>
+              </details>
+            </section>
+
+            <!-- FAQ -->
+            <div id="faq-con" class="grid-con">
+              <div class="col-span-full">
+                  <h2><span>Couples Resort</span><br>FAQ</h2>
+              </div>
+              <section class="col-span-full faq-items line-separator">
+                  <h3>Check-in/Check-out</h3>
+              </section>
+              <section class="col-span-full faq-items">
+                  <h3>All-Inclusive</h3>
+              </section>
+              <section class="col-span-full faq-items">
+                  <h3>Dining Hours &amp; Dress Code</h3>
+              </section>
+              <section class="col-span-full faq-items">
+                  <h3>Amenities In-room</h3>
+                  <div id="faq-text-con">
+                      <div id="faq-list-group1">
+                          <ul>
+                              <li><a href="#">Private Out Door Hot Tubs</a></li>
+                              <li><a href="#">Fibre-Optic Internet - Free WIFI 50 inch Television</a></li>
+                              <li><a href="#">Free - Netflix Video Streaming</a></li>
+                              <li><a href="#">Walkout Spacious Lakeside Balcony</a></li>
+                              <li><a href="#">European Shower (2 or more heads)</a></li>
+                          </ul>
+                      </div>
+                      <div id="faq-list-group2">
+                          <ul>
+                              <li><a href="#">Private Out Door Hot Tubs</a></li>
+                              <li><a href="#">Fibre-Optic Internet - Free WIFI 50 inch Television</a></li>
+                              <li><a href="#">Free - Netflix Video Streaming</a></li>
+                              <li><a href="#">Walkout Spacious Lakeside Balcony</a></li>
+                              <li><a href="#">European Shower (2 or more heads)</a></li>
+                          </ul>
+                      </div>
+                  </div>
+              </section>
+      </div>
+            
+
+              <!-- Footer -->
+              <footer id="footer-hero" class="grid-con">        
+                <section id="footer-contact-info" class="col-span-full">
+                    <h3>Couples Resort</h3>
+                    <p>1198 Osprey Rd, (End of)<br>
+                        Minden, Soyers Lake, ON, <br>
+                        K0M 2K0
+                    </p>
+                    <p>
+                        Toll Free:+1 877 201-1156<br>
+                        FAX:+1 613 638 2217<br>
+                        E-mail: info@coupleresort.com
+                    </p>
+                </section>
+
+                <div id="footer-privacy" class="col-span-full line-separator">
+                    <p id="price-policy">All prices and services on this website and in our reservation system are based on conditions at the time of publishing and are subject to change. Please call to confirm services, availability and pricing. ©2013 Couples Resort Inc. All Rights Reserved. Privacy Policy </p>
+                </div>
+        </footer>
+
+        <script src="js/main.js"></script>   
+    </body>
+</html>
